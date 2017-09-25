@@ -4,7 +4,7 @@ def turn(board)
     input = gets
     index = input_to_index(input)
     if valid_move?(board, index)
-      move(board, inde, char)
+      move(board, index, char)
     else
       turn(board)
     end
