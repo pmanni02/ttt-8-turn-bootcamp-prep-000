@@ -9,6 +9,10 @@ def turn(board)
     end
 end
 
+def move(board, index, char = "X")
+  board[index] = char
+end
+
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -22,9 +26,7 @@ def input_to_index(input)
   input.to_i - 1
 end
 
-def move(board, index, char = "X")
-  board[index] = char
-end
+
 
 # code your #valid_move? method here
 def valid_move?(board,index)
